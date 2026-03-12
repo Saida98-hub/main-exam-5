@@ -5,10 +5,11 @@ const brandRouter = require("./router/brand.routes")
 require("dotenv").config()
 const errorMiddleware = require("./middleware/error.middleware")
 const cookieParser=require("cookie-parser")
-const authRouter = require("./routes/auth.routes")
-const profileRouter = require("./routes/profil.routes")
-const passwordRouter = require("./routes/profile.password.routes")
-const Modelrouter = require("./routes/model.routes")
+
+const authRouter = require("./router/auth.routes")
+const profileRouter = require("./router/profile.routes")
+const passwordRouter = require("./router/profile.password.routes")
+const Modelrouter = require("./router/model.routes")
 
 const PORT = process.env.PORT  ||  3000
 const app = express()
